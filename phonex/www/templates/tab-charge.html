@@ -1,0 +1,32 @@
+<ion-view view-title="Charge your account">
+  <ion-content>
+   <ion-list>
+  <ion-radio ng-click="option1()" ng-model="choice1" ng-value="'A'">Optiunea 1</ion-radio>
+  <ion-radio ng-click="option2()" ng-model="choice2" ng-value="'B'">Optiunea 2</ion-radio>
+  <ion-radio ng-click="option3()" ng-model="choice3" ng-value="'B'">Optiunea 4</ion-radio>
+   <ion-radio ng-click="option4()" ng-model="credit" >Credit</ion-radio>
+</ion-list>
+<div class="list" ng-show="option==4">
+
+  <label class="item item-input item-select">
+    <div class="input-label">
+      Value
+    </div>
+    <select ng-model="value">
+      <option>1$</option>
+      <option selected>2$</option>
+      <option>3$</option>
+    </select>
+  </label>
+
+</div>
+
+<div class="row">
+   <div class="col text-center">
+ <button ng-disabled="option=='x'" ng-click="submitCharge()" style="border-radius:20px" class="button button-positive" >
+  Submit
+</button>
+</div>
+</div>
+  </ion-content>
+</ion-view>
